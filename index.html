@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Bank Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blood Bank Management System</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#donate">Donate</a>
+      <a href="#search">Search</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Manage blood donations and availability efficiently with our system.</p>
+  </section>
+
+  <section id="donate">
+    <h2>Register as Donor</h2>
+    <form id="donorForm">
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Blood Type (e.g. A+)" required />
+      <input type="text" placeholder="City" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="confirmation"></p>
+  </section>
+
+  <section id="search">
+    <h2>Search Blood Availability</h2>
+    <input type="text" id="searchInput" placeholder="Enter blood type..." />
+    <button onclick="searchBlood()">Search</button>
+    <ul id="searchResults"></ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blood Bank Management</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
